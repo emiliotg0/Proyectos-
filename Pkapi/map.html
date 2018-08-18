@@ -1,0 +1,32 @@
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Pokemap</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	</head>
+	<body>
+		<h1>Pokemap</h1>
+		
+		<div id="divMap" class="map map-home" style="margin:12px 0 12px 0;height:400px;"></div>
+		<script>
+			var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+				osmAttrib = '&copy; <a href="http://adamix.net">Amadis Suarez</a> contributors',
+				osm = L.tileLayer(osmUrl, {maxZoom: 20, attribution: osmAttrib});
+			var map = L.map('divMap').setView([19.4398315,-70.8132746], 6).addLayer(osm);
+			
+			/*L.marker([18.4511052,-69.6624628])
+				.addTo(map)
+				.bindPopup('Es el itla, llama aqui 809-220-1111');
+				*/
+			{MARCADORES}
+
+
+		</script>
+		<p>
+			Mapa realizado por Amadis
+		</p>
+  </body>
+</html>
+			{"L.marker([-17.0,40.0])  \n            .addTo(map)  \n            .bindPopup('pikachu');"}
